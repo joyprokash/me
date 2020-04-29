@@ -41,7 +41,7 @@ export default class Contact extends Component {
              if(response.data.status == 'sent')
              {
                 this.setState({loader: 'false'});
-                this.setState({success: 'Mail has been sent !'});
+                this.setState({success: 'Mail has been sent !', name: '', email:'', message:''});
              }
             else
              {

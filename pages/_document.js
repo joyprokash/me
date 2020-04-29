@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <title>Joyprokash - Backend & Front End Developer</title>
+            <title>Joyprokash - Backend || Laravel || NextJS || React Developer</title>
             <meta name="description" content="" />
             <meta name="author" content="" />
             <link rel="stylesheet" type="text/css"  href="css/bootstrap.css" />

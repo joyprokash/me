@@ -126,12 +126,11 @@ export default class Contact extends Component {
                 
               </form>
               <div className="social">
-                <ul>
-                  <li><a href="#"><i className="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i className="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i className="fa fa-github"></i></a></li>
-                  <li><a href="#"><i className="fa fa-instagram"></i></a></li>
-                  <li><a href="#"><i className="fa fa-linkedin"></i></a></li>
+                <ul >
+                  <li><a href="https://facebook.com/joyprokash.me" target="_blank"><i className="fa fa-facebook" title="facebook"></i></a></li>
+                  <li><a href="https://github.com/joyprokash" target="_blank"><i className="fa fa-github" title="github"></i></a></li>
+                  <li><a href="https://www.instagram.com/joyprokash_ch" target="_blank"><i className="fa fa-instagram" title="instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/joyprokash/" target="_blank" ><i className="fa fa-linkedin" title="linkedin"></i></a></li>
                 </ul>
               </div>
             </div>

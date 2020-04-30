@@ -607,6 +607,37 @@ color: #2c3e50;
 	border: 1px solid #121d1f;
 	color: white;
 }
+
+#about .social {
+	margin-top: 60px;
+}
+#about .social ul li {
+	display: inline-block;
+	margin: 0 20px;
+}
+#about .social i.fa {
+	font-size: 30px;
+	padding: 4px 5px;
+	color: #111;
+	transition: all 0.5s;
+}
+#about .social i.fa:hover {
+	color: #121d1f;
+}
+#about .btn {
+	background-color: transparent;
+	border: 1px solid #111010;
+	border-radius: 0;
+	padding: 10px 20px;
+	color: #000;
+	margin-top: 15px;
+}
+#about .btn:hover, #contact .btn:focus {
+	background-color: #121d1f;
+	border: 1px solid #121d1f;
+	color: white;
+}
+
 .btn:active, .btn.active {
 	background-image: none;
 	outline: 0;

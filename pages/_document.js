@@ -19,8 +19,8 @@ class MyDocument extends Document {
             <link rel="stylesheet" type="text/css"  href="css/bootstrap.css" />
             <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
             <link rel="stylesheet" type="text/css"  href="css/style.css" />
-            <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css' />
-            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css' />
+            <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css' />
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css' />
         </Head>
         <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
           <Main />

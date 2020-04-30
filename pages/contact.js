@@ -13,11 +13,27 @@ export default class Contact extends Component {
       };
       this.handleInputChange = this.handleInputChange.bind(this);
       this.onSubmit = this.onSubmit.bind(this);
+      this.ValidateEmail = this.ValidateEmail.bind(this);
   }
 
+  ValidateEmail(mail) 
+  {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(re.test(String(mail).toLowerCase()))
+      {
+         return true;
+      }
+      else
+      {
+         return false;
+      }
+  }
+
+  
   handleInputChange(event) {
     const value = event.target.value;
     const name = event.target.name;
+    
     if(value == '')
     {
       this.setState({[name+'Error']: `${name} is required`});
@@ -26,47 +42,59 @@ export default class Contact extends Component {
     {
       this.setState({[name]: value});
       this.setState({[name+'Error']: ''});
+      if(name === 'email')
+      {
+          if(this.ValidateEmail(value)){
+            this.setState({'emailError': ''});
+          }else{
+            this.setState({'emailError':'You have entered an invalid email address!'});
+          }
+      }
+      
     }
     
   }
 
-  onSubmit(event){
+onSubmit(event){
     
     if(this.state.name != '' && this.state.email != '' && this.state.message != '')
-    {
-        this.setState({loader: 'true'});
-        const param = {name: this.state.name,email: this.state.email,message: this.state.message};
-        axios.post('https://joyprokash.com/send/mail.php', param)
-        .then(response => { 
-             if(response.data.status == 'sent')
-             {
-                this.setState({loader: 'false'});
-                this.setState({success: 'Mail has been sent !', name: '', email:'', message:''});
-             }
-            else
-             {
-                this.setState({loader: 'false'});
-                this.setState({error: 'Something went wrong'});
-             } 
-        });
-        
+    { 
+          if(this.ValidateEmail(this.state.email)){
+              this.setState({loader: 'true'});
+              const param = {name: this.state.name,email: this.state.email,message: this.state.message};
+              axios.post('https://joyprokash.com/send/mail.php', param)
+              .then(response => { 
+                  if(response.data.status == 'sent')
+                  {
+                      this.setState({loader: 'false'});
+                      this.setState({success: 'Mail has been sent !', name: '', email:'', message:''});
+                  }
+                  else
+                  {
+                      this.setState({loader: 'false'});
+                      this.setState({error: 'Something went wrong'});
+                  } 
+              });
+          }else{
+              this.setState({'emailError':'You have entered an invalid email address!'});
+          }
+           
     }else{
-      if(this.state.name == '')
-      {
-        this.setState({nameError: `Name is required`});
-      }
+          if(this.state.name == '')
+          {
+            this.setState({nameError: `Name is required`});
+          }
 
-      if(this.state.email == '')
-      {
-        this.setState({emailError: `Email is required`});
-      }
+          if(this.state.email == '')
+          {
+            this.setState({emailError: `Email is required`});
+          }
 
-      if(this.state.message == '')
-      {
-        this.setState({messageError: `Message is required`});
-      }
+          if(this.state.message == '')
+          {
+            this.setState({messageError: `Message is required`});
+          }
     }
-
     event.preventDefault();
 }
 

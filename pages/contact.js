@@ -81,10 +81,10 @@ export default class Contact extends Component {
                 <p>Dhaka</p><br/>
               </div>
                 <div className="col-md-4"> <i className="fa fa-envelope-o fa-2x"></i>
-                  <p>info@company.com</p>
+                  <p>mail@joyprokash.com</p>
                 </div>
                 <div className="col-md-4"> <i className="fa fa-phone fa-2x"></i>
-                  <p> +1 123 456 1234</p>
+                  <p> +88 01737 014055</p>
                 </div>
               <div className="clearfix"></div>
             </div>

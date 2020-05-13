@@ -20,9 +20,9 @@ export default function Home() {
                       <li><a href="https://www.linkedin.com/in/joyprokash/" target="_blank" ><i className="fa fa-linkedin" title="linkedin"></i></a></li>
                     </ul>
                   </div>
-                  <p className="text-center">
+                 /* <p className="text-center">
                     <a className="btn btn-primary" href="#"><i className="fa fa-download"></i> Download Resume</a>
-                  </p>
+                  </p> */
                 </div>
               </div>
           </div>

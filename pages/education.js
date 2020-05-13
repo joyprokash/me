@@ -9,28 +9,28 @@ export default function Education() {
               <div className="col-lg-12">
                   <ul className="timeline">
                     <li>
-                      <div className="timeline-image"><h4>2010 <br />- <br />2011 </h4></div>
+                      <div className="timeline-image"><h4>2018 <br />- <br />2019 </h4></div>
                       <div className="timeline-panel">
                         <div className="timeline-heading">
-                          <h4>Design University</h4>
-                          <h4 className="subheading">Master Degree of Design</h4>
+                          <h4>Jahangirnagar University</h4>
+                          <h4 className="subheading">Master Degree of Computer Science</h4>
                         </div>
                         <div className="timeline-body">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                          <p>Dhaka, Bangladesh</p>
                         </div>
                       </div>
                    </li>
                     <li className="timeline-inverted">
                       <div className="timeline-image">
-                        <h4>2007 <br />- <br />2010 </h4>
+                        <h4>2012 <br />- <br />2016 </h4>
                       </div>
                       <div className="timeline-panel">
                         <div className="timeline-heading">
-                          <h4>Design University</h4>
-                          <h4 className="subheading">Bachelor Degree of Design</h4>
+                          <h4>Leading University</h4>
+                          <h4 className="subheading">Bachelor Degree of Computer Science & Engineering</h4>
                         </div>
                         <div className="timeline-body">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+                          <p>Sylhet , Bangladesh.</p>
                         </div>
                       </div>
                     </li>

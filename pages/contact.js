@@ -62,7 +62,7 @@ onSubmit(event){
           if(this.ValidateEmail(this.state.email)){
               this.setState({loader: 'true'});
               const param = {name: this.state.name,email: this.state.email,message: this.state.message};
-              axios.post('https://joyprokash.com/send/mail.php', param)
+              axios.post('https://api.joyprokash.com/send/mail.php', param)
               .then(response => { 
                   if(response.data.status == 'sent')
                   {
